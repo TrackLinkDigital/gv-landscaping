@@ -228,3 +228,309 @@
 
 </body>
 </html>
+If you want, I can also:
+
+Add a gold border around the founder box
+
+Make the founder photo circular
+
+Add a “Meet the Founder” button
+
+Add a background behind the whole section
+
+Just tell me what you want next.
+
+make the founder part a little smaller just a tiny tiny bit
+Easy fix — and I’ll keep it subtle like you asked.
+I’ll shrink the founder section just a tiny tiny bit by:
+
+Reducing padding
+
+Making the photo slightly smaller
+
+Tightening the spacing
+
+This keeps the same look, just cleaner and more compact.
+
+Here is the updated CSS only — you can paste this right over your existing founder CSS.
+
+⭐ UPDATED FOUNDER CSS (slightly smaller)
+css
+/* --- FOUNDER SECTION (photo on right, slightly smaller) --- */
+.founder-section {
+    max-width: 850px; /* slightly narrower */
+    margin: 30px auto; /* a bit tighter */
+    padding: 0 20px;
+}
+
+.founder-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* smaller gap */
+    background: #f7f7f7;
+    padding: 15px; /* reduced padding */
+    border-radius: 10px;
+    border-left: 5px solid #c9a44b;
+}
+
+.founder-text {
+    flex: 1;
+    font-size: 17px; /* slightly smaller text */
+}
+
+.founder-photo {
+    width: 130px;  /* was 150px */
+    height: 130px; /* was 150px */
+    border-radius: 10px;
+    object-fit: cover;
+}
+⭐ What this changes visually
+Founder box is 5–10% smaller overall
+
+Photo is just a bit smaller
+
+Text is slightly tighter
+
+Section takes up less vertical space
+
+It will look cleaner without losing the design.
+
+If you want it even slightly smaller or want the photo circular, I can adjust it again.
+
+put it with the whole code now
+Absolutely — here is your full updated HTML with the founder section made slightly smaller and placed under Contact Us, exactly how you asked.
+
+Nothing else was changed.
+
+⭐ FULL UPDATED HTML (copy + paste into GitHub)
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GV Landscaping</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #ffffff;
+        color: #1a1a1a;
+        line-height: 1.6;
+    }
+
+    .header {
+        background: #0f3d1e;
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .header img {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .header h1 {
+        margin: 10px 0 0;
+        font-size: 39px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 29px;
+        color: #0f3d1e;
+    }
+
+    .gold-line {
+        width: 60px;
+        height: 4px;
+        background: #c9a44b;
+        margin: 10px auto 30px;
+        border-radius: 2px;
+    }
+
+    .about {
+        max-width: 900px;
+        margin: auto;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* --- FOUNDER SECTION (slightly smaller) --- */
+    .founder-section {
+        max-width: 850px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .founder-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        background: #f7f7f7;
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 5px solid #c9a44b;
+    }
+
+    .founder-text {
+        flex: 1;
+        font-size: 17px;
+    }
+
+    .founder-photo {
+        width: 130px;
+        height: 130px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* --- SERVICES SECTION (2 per row on phones) --- */
+    .services {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px 40px;
+    }
+
+    @media (min-width: 700px) {
+        .services {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .services {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .service-box {
+        background: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 5px solid #c9a44b;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .contact {
+        max-width: 900px;
+        margin: auto;
+        padding: 0 20px 40px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .contact strong {
+        color: #0f3d1e;
+    }
+
+    .gallery {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 20px 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .footer {
+        background: #0f3d1e;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="logo.png" alt="GV Landscaping Logo">
+    <h1>GV Landscaping</h1>
+</div>
+
+<h2>What We Do</h2>
+<div class="gold-line"></div>
+
+<div class="about">
+    <p><strong>Full-Service Landscaping • Free Estimates</strong></p>
+    <p>GV Landscaping provides professional property care and high-quality outdoor transformations. 
+    We are dedicated to delivering reliable service and expert results to help every client maintain 
+    and enhance the beauty of their landscape.</p>
+</div>
+
+<h2>Our Services</h2>
+<div class="gold-line"></div>
+
+<div class="services">
+    <div class="service-box">Lawn Care</div>
+    <div class="service-box">Tree Trimming</div>
+    <div class="service-box">Yard Cleanup</div>
+    <div class="service-box">Planting</div>
+    <div class="service-box">Hedge & Shrub Care</div>
+    <div class="service-box">All Removals</div>
+    <div class="service-box">Garden Design</div>
+    <div class="service-box">Mulch</div>
+    <div class="service-box">Bed Maintenance</div>
+    <div class="service-box">Fertilizing</div>
+    <div class="service-box">And More</div>
+</div>
+
+<h2>Contact Us</h2>
+<div class="gold-line"></div>
+
+<div class="contact">
+    <p><strong>Mobile:</strong> 513-581-8823</p>
+    <p><strong>Email:</strong> gavinverbecken@gmail.com</p>
+    <p><strong>Address:</strong> 3932 Cincinnati Brookville Road, Hamilton, OH 45013</p>
+    <p><strong>Hours:</strong> Open 24 Hours</p>
+    <p>Have a question? Call or text anytime — we’re happy to help.</p>
+</div>
+
+<!-- ⭐ FOUNDER SECTION (now smaller + moved under Contact Us) -->
+<div class="founder-section">
+    <div class="founder-box">
+        <div class="founder-text">
+            <h2 style="text-align:left; margin-top:0;">Founder</h2>
+            <p><strong>Gavin Verbecken</strong></p>
+            <p>Dedicated to delivering reliable, affordable, and high‑quality landscaping services with a focus on customer satisfaction and long‑term property care.</p>
+        </div>
+        <img src="founder.jpg" alt="Founder Photo" class="founder-photo">
+    </div>
+</div>
+
+<h2>Some of Our Work</h2>
+<div class="gold-line"></div>
+
+<div class="gallery">
+    <img src="before.jpg" alt="Before Work">
+    <img src="after.jpg" alt="After Work">
+</div>
+
+<div class="footer">
+    Reimagining Your Yard<br>
+    Reliable • Affordable • Experienced
+</div>
+
+</body>
