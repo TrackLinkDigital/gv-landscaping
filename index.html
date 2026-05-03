@@ -56,22 +56,50 @@
         font-size: 18px;
     }
 
-    .services {
-        max-width: 1000px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-        padding: 0 20px 40px;
+    /* --- COMPACT SERVICES SECTION --- */
+    .services-compact {
+        max-width: 600px;
+        margin: 0 auto 50px;
+        padding: 0 20px;
     }
 
-    .service-box {
+    .service-row {
+        background: #f7f7f7;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        font-size: 17px;
+        border-left: 5px solid #c9a44b;
+    }
+
+    /* --- FOUNDER SECTION (photo on right) --- */
+    .founder-section {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .founder-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
         background: #f7f7f7;
         padding: 20px;
         border-radius: 10px;
         border-left: 5px solid #c9a44b;
-        font-size: 17px;
-        font-weight: 500;
+    }
+
+    .founder-text {
+        flex: 1;
+        font-size: 18px;
+    }
+
+    .founder-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
     }
 
     .contact {
@@ -127,24 +155,30 @@
     <p>GV Landscaping provides professional property care and high-quality outdoor transformations. 
     We are dedicated to delivering reliable service and expert results to help every client maintain 
     and enhance the beauty of their landscape.</p>
-    <p><strong>Founder: Gavin Verbecken</strong></p>
+</div>
+
+<!-- ⭐ NEW FOUNDER SECTION WITH PHOTO ON RIGHT -->
+<div class="founder-section">
+    <div class="founder-box">
+        <div class="founder-text">
+            <h2 style="text-align:left; margin-top:0;">Founder</h2>
+            <p><strong>Gavin Verbecken</strong></p>
+            <p>Dedicated to delivering reliable, affordable, and high‑quality landscaping services with a focus on customer satisfaction and long‑term property care.</p>
+        </div>
+        <img src="founder.jpg" alt="Founder Photo" class="founder-photo">
+    </div>
 </div>
 
 <h2>Our Services</h2>
 <div class="gold-line"></div>
 
-<div class="services">
-    <div class="service-box">Lawn Care</div>
-    <div class="service-box">Tree Trimming</div>
-    <div class="service-box">Yard Cleanup</div>
-    <div class="service-box">Planting</div>
-    <div class="service-box">Hedge & Shrub Care</div>
-    <div class="service-box">All Removals</div>
-    <div class="service-box">Garden Design</div>
-    <div class="service-box">Mulch</div>
-    <div class="service-box">Bed Maintenance</div>
-    <div class="service-box">Fertilizing</div>
-    <div class="service-box">And More</div>
+<!-- ⭐ NEW COMPACT SERVICES SECTION -->
+<div class="services-compact">
+    <div class="service-row"><strong>Lawn Mowing</strong> — Weekly & bi‑weekly</div>
+    <div class="service-row"><strong>Mulching</strong> — Any color</div>
+    <div class="service-row"><strong>Hedge Trimming</strong> — Clean, sharp lines</div>
+    <div class="service-row"><strong>Spring/Fall Cleanups</strong> — Leaves, debris, haul‑away</div>
+    <div class="service-row"><strong>Landscaping</strong> — Rock, edging, design</div>
 </div>
 
 <h2>Contact Us</h2>
@@ -172,4 +206,3 @@
 </div>
 
 </body>
-</html>
