@@ -127,7 +127,7 @@
         color: #0f3d1e;
     }
 
-    /* --- FULLSCREEN BEFORE/AFTER GALLERY --- */
+    /* --- BEFORE/AFTER GALLERY (shorter height so wider on phones) --- */
     .gallery {
         max-width: 1000px;
         margin: auto;
@@ -144,7 +144,7 @@
 
     .gallery-item img {
         width: 100%;
-        height: 80vh;
+        height: 50vh; /* shorter so it looks wider */
         object-fit: cover;
         border-radius: 10px;
     }
@@ -192,16 +192,19 @@
 <h2>Our Services</h2>
 <div class="gold-line"></div>
 
+<!-- ⭐ UPDATED ORDER SO HEDGE & SHRUB CARE SITS NEXT TO BED MAINTENANCE -->
 <div class="services">
     <div class="service-box">Lawn Care</div>
     <div class="service-box">Tree Trimming</div>
     <div class="service-box">Yard Cleanup</div>
     <div class="service-box">Planting</div>
+
     <div class="service-box">Hedge & Shrub Care</div>
+    <div class="service-box">Bed Maintenance</div>
+
     <div class="service-box">All Removals</div>
     <div class="service-box">Garden Design</div>
     <div class="service-box">Mulch</div>
-    <div class="service-box">Bed Maintenance</div>
     <div class="service-box">Fertilizing</div>
     <div class="service-box">And More</div>
 </div>
@@ -217,12 +220,12 @@
     <p>Have a question? Call or text anytime — we’re happy to help.</p>
 </div>
 
-<!-- ⭐ FOUNDER SECTION (stacked vertically) -->
+<!-- ⭐ FOUNDER SECTION (stacked vertically + updated name) -->
 <div class="founder-section">
     <div class="founder-box">
         <img src="founder.jpg" alt="Founder Photo" class="founder-photo">
         <div class="founder-text">
-            <p><strong>Gavin Verbecken</strong></p>
+            <p><strong>Founder: Gavin Rebecan</strong></p>
             <p>Dedicated to delivering reliable, affordable, and high‑quality landscaping services with a focus on customer satisfaction and long‑term property care.</p>
         </div>
     </div>
@@ -231,7 +234,7 @@
 <h2>Some of Our Work</h2>
 <div class="gold-line"></div>
 
-<!-- ⭐ FULLSCREEN BEFORE/AFTER WITH LABELS -->
+<!-- ⭐ BEFORE/AFTER FULL-WIDTH GALLERY -->
 <div class="gallery">
     <div class="gallery-item">
         <span class="label">Before</span>
@@ -250,3 +253,4 @@
 </div>
 
 </body>
+</html>
